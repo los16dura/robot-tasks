@@ -3,9 +3,14 @@
 from pyrob.api import *
 
 
-@task
+@task(delay=0.05)
 def task_8_6():
-    pass
+    if not wall_is_above() and wall_is_beneath():
+            fill_cell()
+    while not wall_is_on_the_right():
+        move_right()
+        if not wall_is_above() and wall_is_beneath():
+            fill_cell()
 
 
 if __name__ == '__main__':
