@@ -1,0 +1,5 @@
+aq1->Bq2R
+bq1->Bq3R
+aq2->aSTOP
+bq2->aSTOP
+Bq2->aSTOP
